@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<!-- One -->
+<section id="one">
+<div class="container">
+  <header class="major">
+  <h2>My Research</h2>
+  </header>
+  <p> I use a wide variety of telescopes to study the cold intergalactic,
+  circumgalactic, and interstellar medium at high redshift. The study
+  of neutral atomic gas at high redshift is primarily done by studying
+  the gas in absorption against bright background sources, such as
+  quasars. I study the strongest of these neutral hydrogen absorbers,
+  known as Damped Lyman &alpha; Systems (DLAs).</br>
+  </br>
+  To be specific, I use spectrographs on optical
+  telescopes to study the properties of these absorbers, such as its
+  kinematics, metallicity, dust content, etc. These quantities are
+  inferred from UV absorption lines redshifted into the optical
+  regime.</br>
+  </br>
+  More recently, I have ventured into the sub-millimeter and
+  radio regime. These wavelengths can probe the colder
+  molecular gas associated with the interstellar medium of the
+  galaxies that are associated with the gas seen in absorption. By
+  combining information from the radio and optical, I can study the
+  interplay between interstellar and circumgalactic gas.</br>
+  
+  </br>
+  Below are some highlights of the research I have done and/or am
+  currently doing. </p>
+</div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="features">
+        {% for post in site.posts %}
+            <article>
+                <section class="excerpt">
+                <header>
+                    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+                </header>
+                
+                    {{ post.content | truncatewords: 30 }}
+                </section>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a></li>
+                    </ul>
+                </footer>
+                <div class="clear"></div>
+            </article>
+        {% endfor %}
+        </div>
+    </div>
+</section>
