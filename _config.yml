@@ -1,10 +1,11 @@
 # Site settings
+name: Marcel Neeleman
+author: Marcel Neeleman
 title: Marcel Neeleman
 email: marcel@ucsc.edu
-description: > # this means to ignore newlines until "baseurl:"
-  Marcel Neeleman. Resume and Research in Astronomy and Astrophysics while at UCSD and UCSC.
+description: Marcel Neeleman. Resume and Research in Astronomy and Astrophysics while at UCSD and UCSC.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://mneeleman.github.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
